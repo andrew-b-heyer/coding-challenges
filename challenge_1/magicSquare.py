@@ -51,16 +51,16 @@ def magicSquare(size):
 
     # draw our initial starting point
     board[position_current.get("y")][position_current.get("x")] = 1
-    printBoard(board)
-
+    
     # "counter" is also the current value we want to draw onto the board
     for counter in range(2,total_count+1):
         drawCounter(board, counter, position_current)
-        printBoard(board)
+        # printBoard(board)
+    printBoard(board)
 
 
 
 if __name__ == "__main__":
     
-    size = 9
+    size = 3
     magicSquare(size)
